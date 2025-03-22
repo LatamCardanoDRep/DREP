@@ -1,0 +1,106 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject",
+            "contentUrl": "CIP119:contentUrl",
+            "sha256": "CIP119:sha256"
+          }
+        },
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "hashAlgorithm": "blake2b-256",
+  "body": {
+    "givenName": "Latam Cardano",
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://drive.google.com/file/d/1gdXYz73dmK72ZkoyUxH3WrvPmiYTQLzZ/view?usp=sharing",
+      "sha256": "69188cc9f60a0f47ed795564a1f8ce93ea1108ad3dadd358a3f3e99846a36cad"
+    },
+    "motivations": "Safeguard user trust, ensuring Cardano's longevity. Strengthen resilience through core principles. Amplify LatAm's voice in global governance. Leverage Cardano for positive impact in LatAm, addressing real-world challenges.\n",
+    "objectives": "Objectives:\nPrioritize user trust, security, and accessibility of the blockchain. Strengthen Cardano's resilience via decentralization, immutability, security, scalability, and interoperability. Drive LatAm growth by increasing transactions, builders, users, institutional adoption, and public awareness. Champion Cardano's long-term viability.\n",
+    "paymentAddress": "addr1q99h8u9djr6v86t6smzevy4ndhnp7g3fajq2vrja6clk76zjsm2fghlepymx50c745xz3wfpad8d5txv2etqtmvcvzus54kekr",
+    "qualifications": "Operating since Nov 2021, we bring expertise to the DRep role. We were key contributors to CIP 1694, Minimum Viable Governance, drafted constitution, and aided ratification. Members hold Intersect MBO roles. We delivered Education, Marketing, and tooling initiatives. We are technically savvy, with experience in governance, development, and community building, dedicated to Cardano's success.\n",
+    "references": [
+      {
+        "@type": "Link",
+        "label": "Latam Cardano Linktree",
+        "uri": "https://linktr.ee/latamcardano"
+      },
+      {
+        "@type": "Link",
+        "label": "X",
+        "uri": "https://x.com/LatamCardano"
+      },
+      {
+        "@type": "Link",
+        "label": "LinkedIn",
+        "uri": "https://www.linkedin.com/company/latam-cardano-community/"
+      },
+      {
+        "@type": "Identity",
+        "label": "Latam Cardano DRep en Español",
+        "uri": "https://drive.google.com/file/d/1uXNucfGl-wCV5J7Fn6mqegF1pPS-yKkG/view?usp=sharing"
+      },
+      {
+        "@type": "Identity",
+        "label": "Latam Cardano DRep em português",
+        "uri": "https://drive.google.com/file/d/1tkzvD78Kkgdteycl6Mmv2xvsMWJNHNP5/view?usp=sharing"
+      },
+      {
+        "@type": "Identity",
+        "label": "Code of Conduct",
+        "uri": "https://docs.google.com/document/d/163xy2uYER0e8-GNGL2xpqRLlBRTVOWm0F0Fla0oUZzA/edit?usp=sharing"
+      }
+    ]
+  }
+}
