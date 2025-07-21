@@ -1,0 +1,56 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP100:referenceHash",
+              "@context": {
+                "hashDigest": "CIP100:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "comment": "CIP100:comment",
+        "externalUpdates": {
+          "@id": "CIP100:externalUpdates",
+          "@context": {
+            "title": "CIP100:update-title",
+            "uri": "CIP100:uri"
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "body": {
+    "comment": "This proposal has our full support. GovTool is an indispensable public good for the Cardano ecosystem, crucial for fostering accessible and fair governance for every participant. Unlike commercial ventures, GovTool is an open-source, community-built platform, designed to be reused and expanded upon by the community. While this collaborative development demands more time and coordination, it is unequivocally the right approach for a decentralized ecosystem like Cardano.\n\nThe proposal provides a meticulous breakdown of costs for 12 months of work across all environments (Dev, QA, Preview, PreProd, Mainnet), clearly explaining fund allocation and offering historical cost data for complete transparency. This funding is vital to ensure GovTool remains a stable, community-owned hub for participation. Furthermore, the commitment to return any unused funds to the treasury demonstrates exceptional fiscal responsibility. For these compelling reasons, we consider this a fair and absolutely necessary proposal that significantly strengthens Cardano's ability to govern itself."
+  },
+  "hashAlgorithm": "blake2b-256"
+}
